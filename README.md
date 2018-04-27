@@ -1,7 +1,7 @@
 # :date: MyGS Schedule Builder
 A college course Schedule Builder built for [my.georgiasouthern.edu](https://my.georgiasouthern.edu)
 
-[![forthebadge](https://forthebadge.com/images/badges/does-not-contain-treenuts.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-science.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/ages-20-30.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/does-not-contain-treenuts.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-science.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
 
 ![Screenshot](https://i.imgur.com/iMQIGHJ.png)
 
