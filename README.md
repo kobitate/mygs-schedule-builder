@@ -7,9 +7,9 @@ A college course Schedule Builder built for [my.georgiasouthern.edu](https://my.
 
 ## :information_source: About
 
-**Through the power of Ajax**, I present to you the MyGeorgiaSouthern Schedule
-Builder. Create your next semester's schedule **on the fly** using this website.
-Fully integrated with the _Banner_ backend database, Schedule Builder lets you
+**Through the power of Ajax**, I present to you the **MyGeorgiaSouthern Schedule
+Builder**. Create your next semester's schedule **on the fly** using this website.
+Fully integrated with the _Banner_ backend database, **Schedule Builder** lets you
 see a **visual representation of your courses**, so that you can decide the best
 sections to take.
 
@@ -18,6 +18,12 @@ Development_ department at Georgia Southern University. As a student, I
 understood how myself and my peers registered for courses, and used that
 knowledge to **create a solution tailored** to how we think and work on the next
 semester's schedule.
+
+### A note to Georgia Southern students:
+
+_This site is – at the time of writing – not yet available for students to use.
+However, I am discussing with my boss moving the project forward after my
+departure from Georgia Southern._
 
 ## :books: Dependencies
 
