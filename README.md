@@ -8,15 +8,15 @@ A college course Schedule Builder built for [my.georgiasouthern.edu](https://my.
 ## :information_source: About
 
 **Through the power of Ajax**, I present to you the MyGeorgiaSouthern Schedule
-Builder. Create your next semester's schedule on the fly using this website.
-Fully integrated with the Banner backend database, Schedule Builder lets you
-see a visual representation of your courses, so that you can decide the best
+Builder. Create your next semester's schedule **on the fly** using this website.
+Fully integrated with the _Banner_ backend database, Schedule Builder lets you
+see a **visual representation of your courses**, so that you can decide the best
 sections to take.
 
-I built MyGS Schedule Builder as a side project in the Enterprise Application
-Development department at Georgia Southern University. As a student, I
+I built MyGS Schedule Builder as a side project in the _Enterprise Application
+Development_ department at Georgia Southern University. As a student, I
 understood how myself and my peers registered for courses, and used that
-knowledge to create a solution tailored to how we think and work on the next
+knowledge to **create a solution tailored** to how we think and work on the next
 semester's schedule.
 
 ## :books: Dependencies
@@ -34,3 +34,7 @@ As this was one of my final projects at my position with Georgia Southern's
 Enterprise Application Development team, I'd like to offer a special thanks to
 my boss, Rebekah, for believing in me and my crazy ideas. My time working with
 you here was unforgettable. :blue_heart::yellow_heart:
+
+Additionally, much of the database code (not included in the repository) was
+built by previous developers of the Course Search. I would like to thank them
+for laying the groundwork for this project.
