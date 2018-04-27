@@ -33,4 +33,4 @@ _All dependencies used under the terms of [MIT License](https://opensource.org/l
 As this was one of my final projects at my position with Georgia Southern's
 Enterprise Application Development team, I'd like to offer a special thanks to
 my boss, Rebekah, for believing in me and my crazy ideas. My time working with
-you here was unforgettable. :blue_heart: :yellow_heart:
+you here was unforgettable. :blue_heart::yellow_heart:
