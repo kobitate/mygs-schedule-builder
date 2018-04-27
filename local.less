@@ -19,19 +19,33 @@
 	background-color: #00679a !important;
 }
 
-#scheduler {
-	height: 658px;
-	width: 100%;
-	background: transparent;
-	.dhx_cal_navline {
-		overflow: hidden;
+
+
+#calendar {
+	padding-bottom: 30px;
+	.fc-bg .fc-day 	{
+		background-color: rgba(255,255,255,1);
 	}
-	.dhx_cal_event {
-		cursor: pointer;
-		&.hovered_event div {
-			opacity: 0.5;
-		}
+	.fc-bg .fc-axis	{
+		background-color: rgba(255,255,255,1);
 	}
+	.fc-time-grid .fc-slats td {
+		height: 3em;
+	}
+	.fc-time-grid .fc-time {
+		font-size: .8em;
+	}
+	.fc-day-header {
+		font-family: CabinBold, sans-serif;
+		background-color: rgba(255,255,255,1);
+	}
+	.fc-toolbar {
+		display: none;
+	}
+}
+
+.hovered {
+	opacity: 0.5;
 }
 
 #scheduler-search {

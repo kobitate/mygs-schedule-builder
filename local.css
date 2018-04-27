@@ -14,18 +14,29 @@
 .label-primary {
   background-color: #00679a !important;
 }
-#scheduler {
-  height: 658px;
-  width: 100%;
-  background: transparent;
+#calendar {
+  padding-bottom: 30px;
 }
-#scheduler .dhx_cal_navline {
-  overflow: hidden;
+#calendar .fc-bg .fc-day {
+  background-color: #ffffff;
 }
-#scheduler .dhx_cal_event {
-  cursor: pointer;
+#calendar .fc-bg .fc-axis {
+  background-color: #ffffff;
 }
-#scheduler .dhx_cal_event.hovered_event div {
+#calendar .fc-time-grid .fc-slats td {
+  height: 3em;
+}
+#calendar .fc-time-grid .fc-time {
+  font-size: .8em;
+}
+#calendar .fc-day-header {
+  font-family: CabinBold, sans-serif;
+  background-color: #ffffff;
+}
+#calendar .fc-toolbar {
+  display: none;
+}
+.hovered {
   opacity: 0.5;
 }
 #scheduler-search .btn {
@@ -35,10 +46,12 @@
   font-size: 1em;
   display: inline-block;
 }
-#term-controls,#campus-controls {
+#term-controls,
+#campus-controls {
   margin-bottom: 15px;
 }
-#term-controls,#campus-controls .btn {
+#term-controls .btn,
+#campus-controls .btn {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
@@ -73,16 +86,16 @@
 #saved-courses .panel .course table {
   margin-bottom: 0;
 }
-#saved-courses .panel .course table tr:not(.professor) {
+#saved-courses .panel .course table tr:not(.on-campus-error):not(.professor) {
   cursor: pointer;
 }
-#saved-courses .panel .course table tr:not(.professor):hover {
+#saved-courses .panel .course table tr:not(.on-campus-error):not(.professor):hover {
   background-color: #F5F5F5;
 }
-#saved-courses .panel .course table tr.professor {
+#saved-courses .panel .course table tr:not(.on-campus-error).professor {
   cursor: default;
 }
-#saved-courses .panel .course table tr td .course-active {
+#saved-courses .panel .course table tr:not(.on-campus-error) td .course-active {
   display: none;
 }
 #saved-courses .panel .course table tr:not(.on-campus-error) td:nth-child(1) {
@@ -90,19 +103,18 @@
   text-align: center;
   color: #D50000;
 }
-#saved-courses .panel .course table tr td:nth-child(2) {
+#saved-courses .panel .course table tr:not(.on-campus-error) td:nth-child(2) {
   width: 15%;
 }
-#saved-courses .panel .course table tr td:nth-child(3) {
+#saved-courses .panel .course table tr:not(.on-campus-error) td:nth-child(3) {
   width: 50%;
 }
-#saved-courses .panel .course table tr td:nth-child(4) {
+#saved-courses .panel .course table tr:not(.on-campus-error) td:nth-child(4) {
   width: 25%;
 }
-#saved-courses .panel .course table tr td.course-section-online:nth-child(2) {
+#saved-courses .panel .course table tr:not(.on-campus-error) td.course-section-online:nth-child(2) {
   width: 65%;
 }
-#saved-courses .panel .course table tr.active td .course-active {
+#saved-courses .panel .course table tr:not(.on-campus-error).active td .course-active {
   display: inline-block;
 }
-/*# sourceMappingURL=local.css.map */

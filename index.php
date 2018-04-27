@@ -212,31 +212,6 @@ $currentTerm = $_SESSION["portalSettings"]->Settings->CurrentTerm;
 <link rel="stylesheet" type="text/css" href="local.css">
 
 <style>
-	#calendar {
-		padding-bottom: 30px;
-	}
-	.fc-bg .fc-day 		{
-		background-color: rgba(255,255,255,1);
-	}
-	.fc-bg .fc-axis		{
-		background-color: rgba(255,255,255,1);
-	}
-	.fc-time-grid .fc-slats td {
-		height: 3em;
-	}
-	.fc-time-grid .fc-time {
-		font-size: .8em;
-	}
-	.fc-day-header {
-		font-family: CabinBold, sans-serif;
-		background-color: rgba(255,255,255,1);
-	}
-	.fc-toolbar {
-		display: none;
-	}
-	.hovered {
-		opacity: 0.5;
-	}
 </style>
 
 
