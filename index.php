@@ -208,7 +208,7 @@ $currentTerm = $_SESSION["portalSettings"]->Settings->CurrentTerm;
 <link rel="stylesheet" href="lib/fullcalendar/fullcalendar.min.css">
 <script src="lib/fullcalendar/fullcalendar.min.js"></script>
 
-<script type="text/javascript" src="local-fullcalendar.js"></script>
+<script type="text/javascript" src="local.js"></script>
 <link rel="stylesheet" type="text/css" href="local.css">
 
 <style>

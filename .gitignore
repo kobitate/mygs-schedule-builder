@@ -1,3 +1,4 @@
 archive/*
 courses/database.php
 *.codekit3
+.DS_Store
