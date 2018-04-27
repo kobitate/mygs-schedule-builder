@@ -27,6 +27,7 @@ _All dependencies used under the terms of [MIT License](https://opensource.org/l
 * [Select2](https://select2.org/)
 * [jQuery](http://jquery.com/)
 * [MomentJS](https://momentjs.com/)
+* [Bootstrap 3.3.1](https://getbootstrap.com/docs/3.3/)
 
 ## :tada: Special Thanks
 
