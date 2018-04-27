@@ -1,0 +1,140 @@
+#course-details {
+	font-size: 16px;
+	#popup-seats-label {
+		font-size: .5em;
+	}
+	#popup-infobox {
+		// margin-top: 15px;
+		margin-left: 15px;
+		min-width: 175px;
+	}
+	#popup-notes {
+		.label {
+			margin-right: 5px;
+		}
+	}
+}
+
+.label-primary {
+	background-color: #00679a !important;
+}
+
+#scheduler {
+	height: 658px;
+	width: 100%;
+	background: transparent;
+	.dhx_cal_navline {
+		overflow: hidden;
+	}
+	.dhx_cal_event {
+		cursor: pointer;
+		&.hovered_event div {
+			opacity: 0.5;
+		}
+	}
+}
+
+#scheduler-search {
+	.btn {
+		margin: 0;
+	}
+}
+
+#selected-crns {
+	.label {
+// 		margin-right: 5px;
+		font-size: 1em;
+		display: inline-block;
+	}
+}
+
+#term-controls,#campus-controls {
+	margin-bottom: 15px;
+	.btn {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+}
+
+.select2-dropdown {
+	// drop the select2 dropdown below the bootstrap navbar, which has a z-index of 1030
+	z-index: 1020;
+}
+
+#saved-courses {
+	.panel {
+		border: 1px solid #ccc;
+		&.panel-default {
+			.panel-heading {
+				background: #E4E4E4;
+				color: #333333;
+			}
+		}
+		.panel-heading{
+
+			border-bottom: 1px solid #ccc;
+			cursor: pointer;
+			padding-left: 30px;
+			display: block;
+			width: 100%;
+			.course-color {
+				width: 15px;
+				height: 15px;
+				border-radius: 30px;
+				background-color: #D50000;
+				display: inline-block;
+				border: 2px solid #ffffff;
+				position: absolute;
+				margin-left: -20px;
+				margin-top: 3px;
+			}
+		}
+		.course {
+			table {
+				margin-bottom: 0;
+				tr:not(.on-campus-error) {
+					&:not(.professor) {
+						cursor: pointer;
+						&:hover {
+							background-color: #F5F5F5;
+						}
+					}
+					&.professor {
+						cursor: default;
+					}
+					td {
+						.course-active {
+							display: none;
+						}
+						&:nth-child(1){
+							width: 10%;
+							text-align: center;
+							color: #D50000;
+						}
+						&:nth-child(2){
+							width: 15%;
+						}
+						&:nth-child(3){
+							width: 50%;
+						}
+						&:nth-child(4){
+							width: 25%;
+						}
+						&.course-section-online {
+							&:nth-child(2){
+								width: 65%;
+							}
+						}
+					}
+					&.active {
+						td {
+							.course-active {
+								display: inline-block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
