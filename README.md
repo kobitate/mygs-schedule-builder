@@ -15,9 +15,9 @@ sections to take.
 
 I built MyGS Schedule Builder as a side project in the Enterprise Application
 Development department at Georgia Southern University. As a student, I
-understood how me and my peers registered for courses, and used that knowledge
-to create a solution tailored to how we think and work on the next semester's
-schedule.
+understood how myself and my peers registered for courses, and used that
+knowledge to create a solution tailored to how we think and work on the next
+semester's schedule.
 
 ## :books: Dependencies
 
