@@ -42,10 +42,8 @@ Additionally, much of the database code (not included in the repository) was
 built by previous developers of the Course Search. I would like to thank them
 for laying the groundwork for this project.
 
-```
-A note to Georgia Southern students:  
-
-This site is – at the time of writing – not yet available for students to use.
-However, I am discussing with my boss moving the project forward after my
-departure from Georgia Southern.
-```
+> A note to Georgia Southern students:  
+>
+> This site is – at the time of writing – not yet available for students to use.
+> However, I am discussing with my boss moving the project forward after my
+> departure from Georgia Southern.
