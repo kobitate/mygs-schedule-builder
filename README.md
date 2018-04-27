@@ -19,14 +19,6 @@ understood how myself and my peers registered for courses, and used that
 knowledge to **create a solution tailored** to how we think and work on the next
 semester's schedule.
 
-```
-A note to Georgia Southern students:  
-
-This site is – at the time of writing – not yet available for students to use.
-However, I am discussing with my boss moving the project forward after my
-departure from Georgia Southern.
-```
-
 ## :books: Dependencies
 
 _All dependencies used under the terms of [MIT License](https://opensource.org/licenses/MIT)_
@@ -47,3 +39,11 @@ you here was unforgettable. :blue_heart::yellow_heart:
 Additionally, much of the database code (not included in the repository) was
 built by previous developers of the Course Search. I would like to thank them
 for laying the groundwork for this project.
+
+```
+A note to Georgia Southern students:  
+
+This site is – at the time of writing – not yet available for students to use.
+However, I am discussing with my boss moving the project forward after my
+departure from Georgia Southern.
+```
