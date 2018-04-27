@@ -7,6 +7,8 @@ A college course Schedule Builder built for [my.georgiasouthern.edu](https://my.
 
 ## :information_source: About
 
+[:movie_camera: Video Preview :movie_camera:](https://www.facebook.com/kobitate94/videos/vb.100004752517020/820863448082065/)
+
 **Through the power of Ajax**, I present to you the **MyGeorgiaSouthern Schedule
 Builder**. Create your next semester's schedule **on the fly** using this website.
 Fully integrated with the _Banner_ backend database, **Schedule Builder** lets you
