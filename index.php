@@ -7,6 +7,54 @@ $currentTerm = $_SESSION["portalSettings"]->Settings->CurrentTerm;
 ?>
 <!-- CONTENT
 =================================-->
+
+<div class="modal fade" id="onboarding">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-body">
+				<h2 class="text-center">
+					How to use MyGS Schedule Builder
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</h2>
+				<hr />
+				<div class="row" id="onboarding-body">
+					<div class="col-sm-12 col-md-4 text-center">
+						<h3>Step 1</h3>
+						<span class="blue glyphicons glyphicons-user-conversation"></span>
+						<h4 class="blue">Get Advised</h4>
+						<p>Visit your advisor to get a list of all the courses you need to take next semester.</p>
+						<a href="http://academics.georgiasouthern.edu/advisement/" target="_blank" class="btn btn-default">Contact Your Advisor</a>
+					</div>
+					<div class="col-sm-12 col-md-4 text-center">
+						<h3>Step 2</h3>
+						<span class="blue glyphicons glyphicons-calendar"></span>
+						<h4 class="blue">Build Your Schedule</h4>
+						<p>Add your courses to MyGS Schedule Builder to build your perfect schedule.</p>
+						<button class="btn btn-success" data-dismiss="modal">Start Building Your Schedule</button>
+					</div>
+					<div class="col-sm-12 col-md-4 text-center">
+						<h3>Step 3</h3>
+						<span class="blue glyphicons glyphicons-list"></span>
+						<h4 class="blue">Register in WINGS</h4>
+						<p>Use the CRNs provided by MyGS Schedule Builder to register at your assigned time.</p>
+						<a href="/portal/services/process-wngs-auth.php" class="btn btn-default" target="_blank">
+							Go to WINGS
+						</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="modal-footer">
+				<p>
+					<strong>Note:</strong> MyGS Schedule Builder is <i>not</i> a replacement for registering for courses in
+					WINGS. Students are <i>still required to register through WINGS at their designating start times</i>.
+					Consult WINGS for more information.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="modal fade" id="course-details">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -102,6 +150,7 @@ $currentTerm = $_SESSION["portalSettings"]->Settings->CurrentTerm;
 
 		<div class="col-sm-12">
 			<h1>Schedule Builder</h1>
+			<a class="btn btn-sm btn-primary" data-toggle="modal" href="#onboarding">Show Onboarding Dialog</a>
 			<hr />
 
 			<div class="row">
