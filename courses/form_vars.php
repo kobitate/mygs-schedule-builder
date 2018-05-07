@@ -19,7 +19,6 @@ $search_terms = array(
   "201808" => "Fall 2018",
 );
 
-
 // Campus Locations
 $search_locations = array(
   "A" => "Main Campus",
