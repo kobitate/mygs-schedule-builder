@@ -36,6 +36,8 @@
 	$return = array();
 	foreach ($rows as $course) {
 		$fullTitle = $course["Subject"] . " " . $course["Number"] . ": " . $course["Title"];
+		$fullTitle = html_entity_decode($fullTitle);
+		
 		$slug = $course["Subject"] . $course["Number"];
 		if ((stripos($fullTitle, $_GET["q"]) !== false || empty($_GET["q"])) && !in_array($fullTitle, $coursesRaw) ) {
 			$return[] = array(
