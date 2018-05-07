@@ -16,7 +16,7 @@
 $search_terms = array(
   "201801" => "Spring 2018",
   "201805" => "Summer 2018",
-  "201808" => "Fall 2017",
+  "201808" => "Fall 2018",
 );
 
 // Campus Locations
