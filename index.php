@@ -178,19 +178,14 @@ $currentTerm = $_SESSION["portalSettings"]->Settings->CurrentTerm;
 									<?php
 										foreach ($search_terms as $id => $term) {
 											?>
-											<!--
 											<option
 												value="<?php echo $id?>"
 												<?php echo ($id == $nextTerm?" selected":"")?>
 												>
 												<?php echo $term ?>
-											</option>
-											-->
 											<?php
 										}
 									?>
-									<option value="201801">Spring 2018</option>
-									<option value="201808">Fall 2018</option>
 								</select>
 							</div>
 

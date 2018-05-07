@@ -14,9 +14,9 @@
 
 // Terms
 $search_terms = array(
-  "201608" => "Fall 2016",
-  "201701" => "Spring 2017",
-  "201705" => "Summer 2017",
+  "201801" => "Spring 2018",
+  "201805" => "Summer 2018",
+  "201808" => "Fall 2017",
 );
 
 // Campus Locations
@@ -290,4 +290,3 @@ $search_subjects = array(
   "WRIT" => "WRIT Writing",
   "YORU" => "YORU Yoruba",
 );
-
