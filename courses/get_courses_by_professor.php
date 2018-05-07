@@ -4,10 +4,11 @@
 	require_once('../../api/portal/globals/oracle-connection.php');
 	require_once('../../api/portal/globals/banner-functions.php');
 
-
+	// connect to the DB
 	$dbConn = new Database();
 	$dbConn->openConn();
 
+	// build our query
 	$query = array(
 		"course_prefix" 		=> $_GET["subj"],
 		"course_number" 		=> $_GET["courseNumber"],
@@ -32,11 +33,14 @@
 		"course_department" 	=> ""
 	);
 
+	// send it off to the DB
 	$rows = $dbConn->departmentSearch($query);
 
 	$return = array();
 	$i = 0;
 	foreach ($rows as $course) {
+		// get the building number from banner
+		// @TODO move to database.php?
 		$bldgNumQuery = "SELECT ssrmeet_bldg_code FROM ssrmeet WHERE ssrmeet_crn = :crn AND ssrmeet_term_code = :term";
 		$bldgNumStmt = oci_parse($my_conn, $bldgNumQuery);
 
@@ -51,6 +55,7 @@
 		$instructor = 		$course["Instructor"];
 		$crn = 				$course["crn"];
 
+		// save all the information to the results array
 		$return[$instructor]["sections"][$crn][] = array(
 			"days"  				=> $course["DAYS"],
 			"startTime"  			=> date("g:i a", strtotime($course["Class Start Time"])),
@@ -77,6 +82,7 @@
 		);
 	}
 
+	// return our json encoded results
 	echo json_encode($return);
 
 ?>
