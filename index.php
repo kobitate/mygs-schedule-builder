@@ -46,9 +46,10 @@ $currentTerm = $_SESSION["portalSettings"]->Settings->CurrentTerm;
 			</div>
 			<div class="modal-footer">
 				<p>
-					<strong>Note:</strong> MyGS Schedule Builder is <i>not</i> a replacement for registering for courses in
-					WINGS. Students are <i>still required to register through WINGS at their designating start times</i>.
-					Consult WINGS for more information.
+					<strong class="blue">Important Note:</strong>
+					MyGS Schedule Builder is <i>not</i> a replacement for registering for courses in WINGS.<br />
+					<strong>Students are still required to register through WINGS at their designating start times</strong>.<br />
+					Consult WINGS or contact your advisor for more information.
 				</p>
 			</div>
 		</div>
