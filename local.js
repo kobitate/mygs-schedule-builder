@@ -46,10 +46,14 @@ var eventColors = [
 var eventColorN = 0;
 
 function addEvent(day, startTime, endTime, course, courseTitle, crn, location, color, type) {
+
 	// convert week character into date on scheduler
 	var date 		= window["DATE_" + day];
+
+	// build a ISO8601 date string
 	var startDate 	= date + "T" + startTime + ":00";
 	var endDate 	= date + "T" + endTime + ":00";
+
 	// format title
 	var title = course.trim() + ": "+ courseTitle.trim();
 
