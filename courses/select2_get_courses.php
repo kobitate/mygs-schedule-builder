@@ -44,14 +44,18 @@
 		$fullTitle = $course["Subject"] . " " . $course["Number"] . ": " . $course["Title"];
 		$fullTitle = html_entity_decode($fullTitle);
 
+		$fullTitleDupe = strtolower($fullTitle);
+		$fullTitleDupeAmp = str_ireplace("&", "and", $fullTitleDupe);
+
 		// build course slug, used in the DIV ID
 		$slug = $course["Subject"] . $course["Number"];
-		if ((stripos($fullTitle, $_GET["q"]) !== false || empty($_GET["q"])) && !in_array($fullTitle, $coursesRaw) ) {
+		if ((stripos($fullTitle, $_GET["q"]) !== false || empty($_GET["q"])) && !in_array($fullTitleDupe, $coursesRaw) && !in_array($fullTitleDupeAmp, $coursesRaw)) {
 			$return[] = array(
 				"id" => $slug,
 				"text" => $fullTitle
 			);
-			$coursesRaw[] = $fullTitle;
+			$coursesRaw[] = $fullTitleDupe;
+			$coursesRaw[] = $fullTitleDupeAmp;
 		}
 	}
 
