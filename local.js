@@ -165,6 +165,17 @@ function saveCourse(course, courseTitle, profs) {
 				}
 				// check if course is an online class
 				else if (!section.onlineOnly) {
+					var displayTimes;
+
+					if (section.days === null) {
+						displayTimes = `<td colspan="2">Unspecified</td>`;
+					} else {
+						displayTimes = `
+							<td class="course-days">${sections.days}</td>
+							<td class="course-hours">${section.startTime} - ${section.endTime}</td>
+						`;
+					}
+
 					// define the html template
 					sectionHtml = `
 						<tr class="course-section course-section-${section.crn} course-at-${section.campusId}"
@@ -182,8 +193,7 @@ function saveCourse(course, courseTitle, profs) {
 								data-onlineonly="${section.onlineOnly}"
 								data-session="${section.session}">
 							<td><span class="glyphicon glyphicon-ok course-active"></span></td>
-							<td class="course-days">${section.days}</td>
-							<td class="course-hours">${section.startTime} - ${section.endTime}</td>
+							${displayTimes}
 							<td class="course-seats">${section.seatsAvailable}/${section.seatsMax}</td>
 							<td class="course-infolink">
 								<a href="#" class="btn btn-xs btn-default">Info</a>
@@ -344,7 +354,7 @@ function saveCourseDetails(sectionElement, shouldAddToCalendar) {
 		for (var j = 0; j < dayLine.length; j++) {
 			// create event object and add to the events list
 			var k = newEvents.length;
-			if (shouldAddToCalendar) {
+			if (shouldAddToCalendar  && days !== null) {
 				newEvents[k] = addEvent(dayLine[j], hourLine[0], hourLine[1], title[0], title[1], crn, location[0], color, "added");
 			}
 			// save the details of each session
