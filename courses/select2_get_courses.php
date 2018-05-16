@@ -35,7 +35,7 @@
 	$rows = $dbConn->departmentSearch($query);
 
 	// array for just the titles of courses, prevents duplicate entries
-	$coursesRaw = array();
+	$coursesReturned = array();
 
 	// build our results array
 	$return = array();
@@ -44,18 +44,30 @@
 		$fullTitle = $course["Subject"] . " " . $course["Number"] . ": " . $course["Title"];
 		$fullTitle = html_entity_decode($fullTitle);
 
+		// the title we will use to eliminate duplicates
+		// we need both an all-lowerecase and one which replaces ampersands with "and"
+		// there are some courses that have duplicates with different capitalization, ampersands, etc.
+		// this accounts for that
 		$fullTitleDupe = strtolower($fullTitle);
 		$fullTitleDupeAmp = str_ireplace("&", "and", $fullTitleDupe);
 
 		// build course slug, used in the DIV ID
 		$slug = $course["Subject"] . $course["Number"];
-		if ((stripos($fullTitle, $_GET["q"]) !== false || empty($_GET["q"])) && !in_array($fullTitleDupe, $coursesRaw) && !in_array($fullTitleDupeAmp, $coursesRaw)) {
+
+		// check for dupes and search the user's query
+		$isDupe = in_array($fullTitleDupe, $coursesReturned) || in_array($fullTitleDupeAmp, $coursesReturned);
+		$foundInQuery = (stripos($fullTitle, $_GET["q"]) !== false || empty($_GET["q"]));
+
+		if ($foundInQuery && !$isDupe) {
+			// save the information to return later
 			$return[] = array(
 				"id" => $slug,
 				"text" => $fullTitle
 			);
-			$coursesRaw[] = $fullTitleDupe;
-			$coursesRaw[] = $fullTitleDupeAmp;
+
+			// remember which courses we've already found
+			$coursesReturned[] = $fullTitleDupe;
+			$coursesReturned[] = $fullTitleDupeAmp;
 		}
 	}
 
