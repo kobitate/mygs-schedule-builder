@@ -163,7 +163,7 @@ function saveCourse(course, courseTitle, profs) {
 
 					profHtml = $(profHtml).filter("tr.course-section-" + section.crn).html(sectionRow).html();
 				}
-				// check if course is an online class 
+				// check if course is an online class
 				else if (!section.onlineOnly) {
 					var displayTimes;
 
