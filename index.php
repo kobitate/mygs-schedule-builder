@@ -2,8 +2,8 @@
 ob_start();
 include('../../../portal/globals/template/head.inc.php');
 include("courses/form_vars.php");
-$nextTerm = $_SESSION["portalSettings"]->Settings->NextTerm;
-$currentTerm = $_SESSION["portalSettings"]->Settings->CurrentTerm;
+$nextTerm       = $_SESSION["portalSettings"]->Settings->NextTerm;
+$currentTerm    = $_SESSION["portalSettings"]->Settings->CurrentTerm;
 ?>
 <!-- CONTENT
 =================================-->
